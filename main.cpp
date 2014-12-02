@@ -5,9 +5,13 @@
 using namespace std;
 #define CLEAR_FILE 1
 string userInputContent();
+
 string userInputFileName();
+
 void writeInFile(string fileName, string content);
+
 void readFile(string fileName);
+
 void clearFile(string fileName);
 
 int main()
