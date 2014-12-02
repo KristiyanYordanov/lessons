@@ -62,10 +62,18 @@ void readFile(string fileName)
 void clearFile(string fileName)
 {
     ofstream myfile;
-    cout<<"Do you want to clear the data in the file ? < 1 - yes; 0 - no >:\n";
-    int clear;
-    cin>>clear;
-    if(CLEAR_FILE == clear)
+    bool isTest = false;
+    
+    
+    if (fileName.find("test") != string::npos) {
+              isTest = true;
+              }                
+    
+    
+    //cout<<"Do you want to clear the data in the file ? < 1 - yes; 0 - no >:\n";
+    //int clear;
+   // cin>>clear;
+    if(isTest)
     {
         myfile.open (fileName.c_str());
         myfile.clear();
