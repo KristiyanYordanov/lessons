@@ -12,6 +12,9 @@ private:
     double credit;
 
 public:
+    Client(int num, string fam, double rev, double inc, double cred); //consructor
+    Client(); //default consructot
+
     void setNumber(int number);
     int getNumber();
 
@@ -29,6 +32,15 @@ public:
 
     double calculateBalance();
 };
+Client::Client() {
+}
+Client::Client(int num, string fam, double rev, double inc, double cred){
+    number = num;
+    family = fam;
+    revenue = rev;
+    income = inc;
+    credit = cred;
+}
 
 double Client::calculateBalance()
 {
@@ -78,7 +90,8 @@ void Client::setCredit(double cred)
 
 int main()
 {
-    Client* client = new Client[5];
+    //Client* client = new Client[5];
+
     Client ivan;
     ivan.setFamily("Ivanov");
     cout<<ivan.getFamily()<<endl;
