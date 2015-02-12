@@ -28,7 +28,9 @@ public:
         return userID;
     }
 
-    void setRoleID(int roleID);
+    void setRoleID(int roleId){
+        roleID = roleId;
+    }
     int getRoleId()
     {
         return roleID;
@@ -40,6 +42,9 @@ public:
 };
 int main()
 {
+    UsersInRoles role(1,1);
+    role.getUserId();
+
     int userID;
     int roleID;
     UsersInRoles roles[2];
@@ -54,7 +59,7 @@ int main()
         cout<<"---------------\n"<<endl;
 
     }
-
+    role.getUserId();
     for(int i=0; i<2; i++)
     {
         cout<<"Information for the first user!\n";
@@ -67,6 +72,7 @@ int main()
         cout<<"--------------------------"<<endl;
     }
 
-
+    role.getRoleId();
+    role.setRoleID(54,56);
     return 0;
 }
