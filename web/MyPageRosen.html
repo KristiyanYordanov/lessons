@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML</title>
+<style>
+  
+body
+{
+	background-image:url(bg.gif);
+	background-size:cover;
+	background-position:center center;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	overflow:auto;
+}
+ div.menu
+{
+    width:100%;margin:0 auto;
+    text-align:center;
+    background-image: url(bg1.gif);
+    border:1px solid black;
+    font-size:0;
+}
+
+div.menu a
+{
+    display: inline-block;
+    padding: 0 20px;
+    background-image: url(bg.gif);
+    color:White;
+    text-decoration:none;
+    font: bold 12px Arial;
+    line-height: 40px;
+}
+
+div.menu a:hover, div.menu a.current
+{
+    background-position:0 -60px;
+}
+
+div.menu a.dummy
+{
+    width:2px;
+    padding:0 2px;
+}
+#content{
+	text-align: center;
+}
+
+  </style>
+</head>
+<body>
+<div class="menu" align="center">
+    <a href="#1" class="current" >Home</a>
+    <a href="#2">Images</a>
+    <a href="#3">Videos</a>
+	 <a href="#3"></a>
+    <a class="dummy"> </a>
+</div>
+
+  <h1 align="center">My first page ! </h1>
+ 
+ <div id="content">
+<p  font-family="Times New Roman">Hey! Welcome to my first page blah blah blah... if you want to lean the basics of html either click <a href="http://www.w3schools.com/html">here</a> or watch the video bellow!</p>  
+ <iframe width="650" height="430" src="https://www.youtube.com/embed/sEo8ci9Lfmw" frameborder="0" allowfullscreen></iframe>
+<p >Or you can just click on the button bellow and watch a compilation of cats being cats... cuz we all know you prefer to waste your time with pointless videos ^_^</p>
+<button  onclick="myFunction()" autofocus="autofocus" style="color:white;border-radius:10px;background-color:red;"><B>CATS!</B></button>
+ </div>
+<script>
+function myFunction()
+{ 
+	window.open("https://www.youtube.com/watch?v=yo61q5QgN-A", "_self");
+}
+</script>
+</pre>
+</body>
+</html>
